@@ -1,9 +1,9 @@
 // Rachel Gillespie, 20118715, Car Helper Program to give users useful information and advice when choosing their next car.
 
-import java.util.Scanner; // Import Scanner.
+import java.util.Scanner; // import the Scanner class, to get user input.
 
 public class Driver {
-    public static void main(String[] args) {// contains main method and runs the program.
+    public static void main(String[] args) {// invokes the main method
 
         new Driver(); // creates an instance of driver.
     }
@@ -163,7 +163,7 @@ public class Driver {
             } else if (choice == 6) { // Doesn't print Error message if choice is 6.
 
             } else {
-                
+
                 System.out.println("Error: Invalid choice. Please enter a number between 1 & 6.");
 
                 System.out.println("_______________________________________________________________________");
