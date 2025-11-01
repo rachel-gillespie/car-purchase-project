@@ -86,7 +86,7 @@ public class CarPurchaseHelper { // contains logic, tasks and reusable functiona
         }
     }
 
-    public boolean returnToMenu(String reply) { // returnToMenu method, returns a boolean, has 1 parameter.
+    public boolean returnToMenu(String reply) { // returnToMenu method, returns a boolean(true/false), has 1 parameter.
         return reply.equalsIgnoreCase("yes"); // checking if the string inputted is equal to yes, ignoring letter case.
     }
 
