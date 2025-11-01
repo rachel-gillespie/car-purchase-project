@@ -2,33 +2,104 @@ Name : Rachel Gillespie
 
 Student Number: 20118715
 
+For this project, I started by creating 2 classes in the Sources Root folder, CarPurchaseHelper and Driver. 
+
+The CarPurchaseHelper class contains all the car purchase calculation methods, HP, PCP, Fuel Cost, Monthly Cost and Recommended Car Type. It also contains some extra methods, a Return to Menu method, a method to print the Welcome Messsage, and the Goodbye Message.
+
+The Driver class contains the main method and the Scanner class.
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Secondly, after creating the 2 classes I began writing the methods in the CarPurchaseHelper.java file, below I detail what the methods do:
+
+printWelcomeMessage (line 5 - 7)
+- When called the method returns the message "Welcome to the Car Purchase Helper Program! Let's find the perfect car for you!". 
+
+calculateHP (line 10 - 31)
+- This method is used to calculate the monthly Hire Purchase payments. 
+- It takes in carPrice, deposit, annualInterest and termYears from the user to calculate HP.
+- amountToFinance is calculated by subtracting deposit from carPrice.
+- monthlyInterestRate is calculated by dividing annualInterest by 100 and the answer by 12.
+- totalMonths is calculated by multiplying termYears by 12.
+- It then uses the formula (1 + r)^n.
+- r is the monthlyInterestRate and n is the number of totalMonths.
+- A for loop is used to calculate (1 + r)^n, it is then stored as a variable called factor.
+- Factor, amountToFinance and monthlyInterestRate are then used to calculate the monthly payment using the formula, monthlyPayment = L * r * factor / (factor - 1).
+- L is the amountToFinance and r is the monthlyInterestRate.
+
+pcpResultMonth (line 34 - 56)
+- This method is used to calculate the monthly Personal Contract Plan payments.
+- It takes the carPrice, deposit, annualInterest, termYears and gmfvPercent from the user to calculate PCP.
+- gmfv is calculated by dividing gmfvPercent by 100 and then mulitplying carPrice by that answer.
+- amountToFinance is calculated by subtracting deposit from carPrice and then subtracting gmfv.
+- monthlyInterestRate is calculated by dividing annualInterest by 100 and the answer by 12.
+- totalMonths is calculated by multiplying termYears by 12.
+- It then uses the formula (1 + r)^n.
+- r is the monthlyInterestRate and n is the number of totalMonths.
+- A for loop is used to calculate (1 + r)^n, it is then stored as a variable called factor.
+- Factor, amountToFinance and monthlyInterestRate are then used to calculate the monthly payment using the formula, monthlyPayment = L * r * factor / (factor - 1).
+- L is the amountToFinance and r is the monthlyInterestRate.
+
+fuelCostEstimator (line 58 - 65)
+- This method is used to calculate weekly Fuel Cost.
+- It takes the weeklyKilometers and fuelCost per litre from the user input to calculate weeklyFuelCost.
+- weeklyFuelCost is calculated by dividing weekly kilometers by 100 multiplying the answer by 6 and then by fuelCost.
+- Assuming the car uses 6L of fuel per 100km.
+
+calculateMonthlyCost (line 67 - 74)
+- This method is used to calculate monthly cost.
+- It takes the carPrice and termMonths from the user input to calculate monthlyPayment.
+- monthlyPayment is calculated by dividing carPrice by termMonths.
+
+recommendCarType (line 76 - 87)
+- This method is used to recommend a car type to the user.
+- It takes the carRequiremnt from the user input.
+- Based on the requirement entered it returns a recommended car.
+- If the user doesn't enter a recognised requirement this message is returned "You did not input a valid requirement!".
+
+returnToMenu (line 89 - 91) ***
+- This method is used to bring the user back to the main menu.
+- When called it checks to see if the user input is equal to yes while ignoring letter case and returns a true value.
+
+printGoodbyeMessage (line 93 - 95)
+- When called the method returns the message "We hope you had a successful experience! Goodbye!"
+
+These methods can be called whenever needed in the Driver class, reducing repetition and making the code easier to read and maintain.
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Next, I started working on the Driver.java file.
+
+- The first thing I did in this file was import the Scanner class.
+- Then I invoked the main method. public: Java Virtual Machine must access it, static: Belongs to class, not an object, void: doesn't return a value and String[] args: Can hold command-line input.
+- I created an instance of the driver method.
+- I then created a Scanner object called input in order to use the Scanner class. This object is the tool for reading input.
+
+
+
+
+
+
+
+
+
+
+
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Part A - Comments/Indention etc (x / 9)
 -----------------------------
-
 comments (x / 1)
 formatting (x / 2)
 naming (x / 2)
 structure of code (x / 2)
-inclusion of readme and reflection(x / 2)
+inclusion of readme and reflection (x / 2)
 
-
-Part B - Working Project  (X /6)
+Part B - Working Project  (x / 6)
 -----------------------------
 Code compile and runs without error (x / 6)
 
-
 Part C - CarPurchaseHelper (X /34)
------------------------------
-- HP is calculated by
-- Line 10 shows the calculateHP method, returns a double, has 4 parameters. 
-- 
-
-- PCP is calculated by 
+----------------------------- 
 PCP method explained  (x / 7)   
 HP method explained (x / 7) 
 All other methods written   (x / 20)   
-
-
 
 Part D - Driver	 (X /36)
 -----------------------------
@@ -38,7 +109,6 @@ Code written as per spec (X /33)
    - PCP code correctly wrtten and outputs amount (X /15)
    - lcv correctly updating and menu looping (X /5)
    - all methods created in CarPurchaseHelper called and used correctly (X /10)
-
 
 Part E - Reflection/Readme (x / 10)
 -----------------------------
@@ -67,19 +137,16 @@ Well written menu and ease of use (x/5)
 
 Part G - For Extra Credit (10%)  (x / 10)
 -----------------------------
-Please list the following for each extra functionality that you implemented
+Extra Functionality ***
+Please list the following for each extra functionality that you implemented:
+- returnToMenu() method
+
+
+
+
      the extra functionality 
      what changes this lead to from spec given
      where the extra implementation took place.
-
-
-Reflection Outline:
-
-Where selection/iteration used
-
-Methods with parameters and return values
-
-How PCP/HP were understood and used
 
 Coding process and challenges
 
