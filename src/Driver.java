@@ -18,7 +18,16 @@ public class Driver {
         int choice = 0;
         while (choice != 6) {// for loop repeats while 'i' is less than or equal to 6.
 
-            System.out.println("");
+            System.out.println("  ____             _   _      _                 \n" +
+                    " / ___|__ _ _ __  | | | | ___| |_ __   ___ _ __ \n" +
+                    "| |   / _` | '__| | |_| |/ _ \\ | '_ \\ / _ \\ '__|\n" +
+                    "| |__| (_| | |    |  _  |  __/ | |_) |  __/ |   \n" +
+                    " \\____\\__,_|_|    |_| |_|\\___|_| .__/ \\___|_|   \n" +
+                    "|  _ \\ _ __ ___   __ _ _ __ __ |_| __ ___       \n" +
+                    "| |_) | '__/ _ \\ / _` | '__/ _` | '_ ` _ \\      \n" +
+                    "|  __/| | | (_) | (_| | | | (_| | | | | | |     \n" +
+                    "|_|   |_|  \\___/ \\__, |_|  \\__,_|_| |_| |_|     \n" +
+                    "                 |___/                          ");
             System.out.println("MAIN MENU");
             System.out.println("1. Calculate HP");
             System.out.println("2. Calculate PCP");
