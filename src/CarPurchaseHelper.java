@@ -19,7 +19,7 @@ public class CarPurchaseHelper { // contains logic, tasks and reusable functiona
             monthlyPayment = amountToFinance / totalMonths; // Variable monthlyPayment is assigned amountToFinance divided by totalMonths if condition gave a true result.
         } else { // Do these statements if condition gave a false result.
             // Calculate (1 + r)^n using a loop
-            double factor = 1; // declares a variable called factor of type double and assigns it the value of 1.
+            double factor = 1; // declares a variable called factor of type double and assigns it the value of 1. It represents (1 + r)^n which is the compund interest growth factor over the loan period.
             for (int i = 0; i < totalMonths; i++) { // for loop. Initialize int i the value of 0. Set boolean condition, if i is less than totalMonths. Post-body action, increment i.
                 factor *= (1 + monthlyInterestRate); // factor is factor multiplied by 1 added to monthlyInterestRate.
             }
@@ -44,7 +44,7 @@ public class CarPurchaseHelper { // contains logic, tasks and reusable functiona
             monthlyPayment = amountToFinance / totalMonths; // Variable monthlyPayment is assigned amountToFinance divided by totalMonths if condition gave a true result.
         } else { // Do these statements if condition gave a false result.
             // Calculate (1 + r)^n using a loop
-            double factor = 1; // declares a variable called factor of type double and assign it the value of 1.
+            double factor = 1; // declares a variable called factor of type double and assign it the value of 1. It represents (1 + r)^n which is the compund interest growth factor over the loan period.
             for (int i = 0; i < totalMonths; i++) { //  for loop. Initialize int i the value of 0. Set boolean condition, if i is less than totalMonths. Post-body action, i increment.
                 factor *= (1 + monthlyInterestRate); // factor is factor multiplied by 1 added to monthlyInterestRate.
             }
@@ -91,10 +91,8 @@ public class CarPurchaseHelper { // contains logic, tasks and reusable functiona
     }
 
     public String printGoodbyeMessage() { // printGoodbyeMessage method, returns a string, has no parameters.
-
         return "We hope you had a successful experience! Goodbye!"; // Returns String
     }
-
 
 }
 
