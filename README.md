@@ -29,5 +29,7 @@ Goodbye message is looping infinitely.
 Sources:
 ====================
 1) https://www.geeksforgeeks.org/java/loops-in-java/
-2) https://www.asciiart.eu/text-to-ascii-art
-3) 
+2) https://www.geeksforgeeks.org/java/methods-in-java/
+3) https://www.w3schools.com/java/java_booleans.asp
+4) https://www.asciiart.eu/text-to-ascii-art
+5) 
