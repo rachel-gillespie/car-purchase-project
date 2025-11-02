@@ -23,7 +23,7 @@ Instructions:
 
 Known bugs/problems:
 ====================
-None
+- It's running perfectly now but I've had some difficulty with the buffer.
 
 Extra Functionality:
 ====================
