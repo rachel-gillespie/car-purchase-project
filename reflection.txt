@@ -14,6 +14,7 @@ printWelcomeMessage (line 5 - 7)
 - When called the method returns the message "Welcome to the Car Purchase Helper Program! Let's find the perfect car for you!". 
 
 calculateHP (line 10 - 31)
+A finance plan where you pay a deposit and then equal monthly payments until the full amount is paid. You own the car once the final payment is made.
 - This method is used to calculate the monthly Hire Purchase payments. 
 - It takes in carPrice, deposit, annualInterest and termYears from the user to calculate HP.
 - amountToFinance is calculated by subtracting deposit from carPrice.
@@ -26,6 +27,7 @@ calculateHP (line 10 - 31)
 - L is the amountToFinance and r is the monthlyInterestRate.
 
 pcpResultMonth (line 34 - 56)
+A type of car finance where you pay a deposit, followed by monthly payments over a fixed term. At the end, you can either return the car, pay a final balloon payment to own it, or trade it in.
 - This method is used to calculate the monthly Personal Contract Plan payments.
 - It takes the carPrice, deposit, annualInterest, termYears and gmfvPercent from the user to calculate PCP.
 - gmfv is calculated by dividing gmfvPercent by 100 and then mulitplying carPrice by that answer.
@@ -66,11 +68,26 @@ These methods can be called whenever needed in the Driver class, reducing repeti
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Next, I started working on the Driver.java file.
 
-- The first thing I did in this file was import the Scanner class.
-- Then I invoked the main method. public: Java Virtual Machine must access it, static: Belongs to class, not an object, void: doesn't return a value and String[] args: Can hold command-line input.
-- I created an instance of the driver method.
-- I then created a Scanner object called input in order to use the Scanner class. This object is the tool for reading input.
-
+- The first thing I did in this file was import the Scanner class. (line 3)
+- Then I invoked the main method. public: Java Virtual Machine must access it, static: Belongs to class, not an object, void: doesn't return a value and String[] args: Can hold command-line input. (line 6)
+- I created an instance of the driver method and then called it. (line 8 & 11)
+- I then created a Scanner object called input in order to use the Scanner class. This object is the tool for reading input. (line 13)
+- I also created a CarPurchaseHelper object called CarPurchaserHelper to access the methods I created in that class. (line 15)
+- The next thing I did was call the printWelcomeMessage() method. (line 17)
+- I then assigned the variable choice of type int the value of 0 to initialise the variable. (line 19)
+- I created a while loop to repeatedly take input from the user until they choose to exit the program, which then executes the goodbye message when the loop has finished. (line 20 - 177)
+- I then printed out the Main menu and the options the user can choose from. (line 22 - 39)
+- After that the variable 'choice' is updated by the user input read by the Scanner class.
+- I decided to add a divder between each section to optimise readability and separate the sections. (line 42, 67, 94, 115, 136, 166, 174 & 182) ***
+- The next thing was to create an 'if' statement so that the program would print a different calculation depending on the choice the user input. An 'if' statement evaluates a boolean condition and its result will determine which portion of the if statement is executed. The LCV (Loop Control Variable) is updated with every  (line 44, 69, 96, 117, 138, 168, 170)
+- For the HP Calculation,
+- For the PCP Calculation,
+- For the Fuel Cost Calculation,
+- For the Monthly Cost Calculation,
+- For the Car Type Recommendation,
+- Calling the returnToMenu method
+-  An error message will be printed if the user doesn't input a valid option. (line 170 - 175)
+- The final thing I did was call the printGoodbyeMessage() method. (line 180)
 
 
 
@@ -138,15 +155,14 @@ Well written menu and ease of use (x/5)
 Part G - For Extra Credit (10%)  (x / 10)
 -----------------------------
 Extra Functionality ***
-Please list the following for each extra functionality that you implemented:
-- returnToMenu() method
-
-
-
 
      the extra functionality 
      what changes this lead to from spec given
      where the extra implementation took place.
 
 Coding process and challenges
+Please list the following for each extra functionality that you implemented:
+- returnToMenu() method
 
+Final Mark  (x / 100)
+-----------------------------
