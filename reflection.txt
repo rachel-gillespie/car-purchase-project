@@ -97,7 +97,7 @@ Main difficulties I came across in the development of solution and how I solved 
 - Figuring out the order to have everything in so that it repeats in the while loop.
 - Dealing with syntax errors.
 - Making sure the return to menu worked after each set of questions.
-- Clearing the buffer.
+- It's running perfectly now but I've had some difficulty with the buffer.
 
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Main learnings from my engagement with assignment:
@@ -170,5 +170,5 @@ Please list the following for each extra functionality that you implemented:
 - I decided to add a divder between each section to optimise readability and separate the sections. (line 42, 67, 94, 115, 136, 166, 174 & 182) ***
 - format() method which converts the double hpMonthly, double pcpMonthly, double fuelWeekly and double costMonthly into Strings and formats it to 2 decimal places. (line 58, 85, 106 & 127) ***
 
-Final Mark  (95.5 / 100)
+Final Mark  (92.5 / 100)
 -----------------------------
