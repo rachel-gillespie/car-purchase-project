@@ -58,6 +58,7 @@ public class Driver {
                 System.out.println("Monthly HP payment: €" + String.format("%.2f", hpMonthly)); //formats hpMonthly to 2 decimal places.
 
                 System.out.println("Return to menu(yes/no): ");
+                input.nextLine(); // clears buffer
                 String reply = input.nextLine();
                 if (!carPurchaserHelper.returnToMenu(reply)) {
                     choice = 6; // if user doesn't input yes, the program prints the goodbye message and ends.
@@ -81,9 +82,10 @@ public class Driver {
                 double gmfvPercent = input.nextDouble();
 
                 double pcpMonthly = carPurchaserHelper.pcpResultMonth(pcpPrice, pcpDeposit, pcpInterest, pcpTerm, gmfvPercent);
-                System.out.println("Monthly PCP payment: €" + String.format("%.2f", pcpMonthly));
+                System.out.println("Monthly PCP payment: €" + String.format("%.2f", pcpMonthly)); //formats pcpMonthly to 2 decimal places.
 
                 System.out.println("Return to menu(yes/no): ");
+                input.nextLine();
                 String reply = input.nextLine();
                 if (!carPurchaserHelper.returnToMenu(reply)) {
                     choice = 6; // if user doesn't input yes, the program prints the goodbye message and ends.
@@ -101,9 +103,10 @@ public class Driver {
                 double fuelCost = input.nextDouble();
 
                 double fuelWeekly = carPurchaserHelper.fuelCostEstimator(fuelDistance, fuelCost);
-                System.out.println("Weekly Fuel Cost: €" + String.format("%.2f", fuelWeekly));
+                System.out.println("Weekly Fuel Cost: €" + String.format("%.2f", fuelWeekly)); //formats fuelWeekly to 2 decimal places.
 
                 System.out.println("Return to menu(yes/no): ");
+                input.nextLine();
                 String reply = input.nextLine();
                 if (!carPurchaserHelper.returnToMenu(reply)) {
                     choice = 6; // if user doesn't input yes, the program prints the goodbye message and ends.
@@ -124,6 +127,7 @@ public class Driver {
                 System.out.println("Monthly Cost: €" + String.format("%.2f", costMonthly));
 
                 System.out.println("Return to menu(yes/no): ");
+                input.nextLine();
                 String reply = input.nextLine();
                 if (!carPurchaserHelper.returnToMenu(reply)) {
                     choice = 6; // if user doesn't input yes, the program prints the goodbye message and ends.
@@ -153,6 +157,7 @@ public class Driver {
                 System.out.println("Recommended Car: " + RecommendCar);
 
                 System.out.println("Return to menu(yes/no): ");
+                input.nextLine();
                 String reply = input.nextLine();
                 if (!carPurchaserHelper.returnToMenu(reply)) {
                     choice = 6; // if user doesn't input yes, the program prints the goodbye message and ends.
