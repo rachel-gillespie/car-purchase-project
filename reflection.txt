@@ -99,6 +99,7 @@ Main difficulties I came across in the development of solution and how I solved 
 - Making sure the return to menu worked after each set of questions.
 - Clearing the buffer.
 
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Main learnings from my engagement with assignment:
 - The reflection really helped me understand my code fully, by taking the time to write out and explain my process I was able to reflect and double check why I did things the way I did.
 
