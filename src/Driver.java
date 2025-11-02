@@ -157,7 +157,6 @@ public class Driver {
                 System.out.println("Recommended Car: " + RecommendCar);
 
                 System.out.println("Return to menu(yes/no): ");
-                input.nextLine();
                 String reply = input.nextLine();
                 if (!carPurchaserHelper.returnToMenu(reply)) {
                     choice = 6; // if user doesn't input yes, the program prints the goodbye message and ends.
@@ -167,7 +166,7 @@ public class Driver {
 
             } else if (choice == 6) { // Doesn't print Error message if choice is 6.
 
-            } else {
+            } else { // Prints an error message if user doesn't input a valid choice between 1 & 6 inclusive.
 
                 System.out.println("Error: Invalid choice. Please enter a number between 1 & 6.");
 

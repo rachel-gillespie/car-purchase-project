@@ -6,7 +6,6 @@ public class CarPurchaseHelper { // contains logic, tasks and reusable functiona
         return "Welcome to the Car Purchase Helper Program! Let's find the perfect car for you!"; // Returns String
     }
 
-    // ToDO: explain it in the reflection
     public double calculateHP(double carPrice, double deposit, double annualInterest, int termYears) { // calculateHP method, returns a double, has 4 parameters.
         double amountToFinance = carPrice - deposit; // declares a variable called amountToFinance of type double and assigns it the value of carPrice minus deposit.
 
@@ -30,7 +29,6 @@ public class CarPurchaseHelper { // contains logic, tasks and reusable functiona
         return monthlyPayment; // returns monthlyPayment
     }
 
-    // ToDO: explain it in the reflection
     public double pcpResultMonth(double carPrice, double deposit, double annualInterest, int termYears, double gmfvPercent) { // pcpResultMonth method, returns a double, has 5 parameters.
         double gmfv = carPrice * (gmfvPercent / 100); // declares a variable called gmfv of type double and assigns it the value of gmfvPercent divided by 100, then multiplied by carPrice.
         double amountToFinance = carPrice - deposit - gmfv; // declares a variable called amountToFinance of type double and assigns it the value of carPrice minus deposit minus gmfv.
