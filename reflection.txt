@@ -61,7 +61,7 @@ recommendCarType (line 76 - 87)
 
 returnToMenu (line 89 - 91) ***
 - This method is used to bring the user back to the main menu.
-- When called it checks to see if the user input is equal to yes while ignoring letter case and returns a true value.
+- When called it checks to see if the user input is equal to "yes" while ignoring letter case, it returns true or false depending if it is equal or not.
 
 printGoodbyeMessage (line 93 - 95)
 - When called the method returns the message "We hope you had a successful experience! Goodbye!"
@@ -78,7 +78,7 @@ Next, I started working on the Driver.java file.
 - The next thing I did was call the printWelcomeMessage() method. (line 17)
 - I then assigned the variable choice of type int the value of 0 to initialise the variable. (line 19)
 - I created a while loop to repeatedly take input from the user until they choose to exit the program, which then executes the goodbye message when the loop has finished. (line 20 - 177)
-- I then printed out the Main menu and the options the user can choose from. (line 22 - 39)
+- Inside the while loop I then printed out the Main menu and the options the user can choose from. (line 22 - 39)
 - After that the variable 'choice' is updated by the user input read by the Scanner class.
 - I decided to add a divder between each section to optimise readability and separate the sections. (line 42, 67, 94, 115, 136, 166, 174 & 182) ***
 - The next thing was to create an 'if' statement so that the program would print a different calculation depending on the choice the user input. An 'if' statement evaluates a boolean condition and its result will determine which portion of the if statement is executed. The LCV (Loop Control Variable) is updated after every loop. (line 44, 69, 96, 117, 138, 168, 170)
@@ -90,9 +90,18 @@ Next, I started working on the Driver.java file.
 - For the Monthly Cost Calculation, The user is asked to answer some questions about car price and term in months. These are stored as variables. The carPurchaserHelper object is used to call the method calculateMonthlyCost. The monthly cost is then printed out as the costMonthly variable. (line 117 - 138)
 - For the Car Type Recommendation, The user is asked to answer a question about car requirement. This is stored as a variable. The carPurchaserHelper object is used to call the method recommendCarType. The recommended car is then printed out as the recommendCar variable. The while loop repeats looking for input from the user until the user types one of the three options suggested. (line 138 - 168)
 - An error message will be printed if the user doesn't input a valid option. (line 170 - 175)
-- The final thing I did was call the printGoodbyeMessage() method. (line 180)
+- The final thing I did was call the printGoodbyeMessage() method outside the while loop. (line 180)
 
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Main difficulties I came across in the development of solution and how I solved them:
+- Figuring out the order to have everything in so that it repeats in the while loop.
+- Dealing with syntax errors.
+- Making sure the return to menu worked after each set of questions.
+- Clearing the buffer.
+
+Main learnings from my engagement with assignment:
+- The reflection really helped me understand my code fully, by taking the time to write out and explain my process I was able to reflect and double check why I did things the way I did.
+
 Marking Scheme / Rubric
 -----------------------------
 Part A - Comments/Indention etc (8.5 / 9)
@@ -107,28 +116,28 @@ Part B - Working Project  (6 / 6)
 -----------------------------
 Code compile and runs without error (6 / 6)
 
-Part C - CarPurchaseHelper (X /34)
+Part C - CarPurchaseHelper (30 /34)
 ----------------------------- 
-PCP method explained  (x / 7)   
-HP method explained (x / 7) 
+PCP method explained  (5 / 7)   
+HP method explained (5 / 7) 
 All other methods written   (20 / 20)   
 
-Part D - Driver	 (X /36)
+Part D - Driver	 (36 /36)
 -----------------------------
 CarPurchaseHelper object created (3 /3)
-Code written as per spec (X /33)
-   - HP Calculation code uncommented and working (X /3)
-   - PCP code correctly wrtten and outputs amount (X /15)
-   - lcv correctly updating and menu looping (X /5)
-   - all methods created in CarPurchaseHelper called and used correctly (X /10)
+Code written as per spec (33 /33)
+   - HP Calculation code uncommented and working (3 /3)
+   - PCP code correctly wrtten and outputs amount (15 /15)
+   - lcv correctly updating and menu looping (5 /5)
+   - all methods created in CarPurchaseHelper called and used correctly (10 /10)
 
-Part E - Reflection/Readme (5 / 10)
+Part E - Reflection/Readme (8 / 10)
 -----------------------------
 Filled out parts A - D above (3 / 3)
 
 Completed readme as per spec (2 / 2)
 
-Rest (x / 5)
+Rest (3 / 5)
 Chronology of my implementation (what I did first, etc.. )
 
 Main difficulties I came across in the development of solution and how I solved them.
@@ -152,13 +161,13 @@ Part F - Final Product (4 / 5)
 -----------------------------
 Well written menu and ease of use (4 / 5)
 
-Part G - For Extra Credit (10%)  (4 / 10)
+Part G - For Extra Credit (10%)  (3 / 10)
 -----------------------------
 Extra Functionality ***
 Please list the following for each extra functionality that you implemented:
-- returnToMenu() method - allows user the option to either return to the menu or exit the program after each calculation. (line 
-- Divider between each section for readability and better UI. (line 
-- Added String.format("%.2f", ) to format to 2 decimal places. (line 
+- returnToMenu method(), asks the user if they want to return to the menu and waits for user input. Reads what the user types and stores it as the variable 'reply'. The answer is checked using the returnToMenu() method and it makes a decision. If the user doesn't input yes, the choice is set to 6 to exit the loop, the Goodbye message is printed and the program ends. (line 60 - 65, line 87 - 92, line 108 - 113, line 129 - 134 & line 159 - 164) ***
+- I decided to add a divder between each section to optimise readability and separate the sections. (line 42, 67, 94, 115, 136, 166, 174 & 182) ***
+- format() method which converts the double hpMonthly, double pcpMonthly, double fuelWeekly and double costMonthly into Strings and formats it to 2 decimal places. (line 58, 85, 106 & 127) ***
 
-Final Mark  (x / 100)
+Final Mark  (95.5 / 100)
 -----------------------------
