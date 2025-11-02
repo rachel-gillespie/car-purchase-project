@@ -23,13 +23,14 @@ Instructions:
 
 Known bugs/problems:
 ====================
+None
 
 Extra Functionality:
 ====================
-Return to menu method - allows user the option to either return to the menu or exit the program after each calculation.
-Divider between each section for readability and better UI.
-Added String.format("%.2f", ) to format to 2 decimal places.
-
+- returnToMenu method(), asks the user if they want to return to the menu and waits for user input. Reads what the user types and stores it as the variable 'reply'. The answer is checked using the returnToMenu() method and it makes a decision. If the user doesn't input yes, the choice is set to 6 to exit the loop, the Goodbye message is printed and the program ends. (line 60 - 65, line 87 - 92, line 108 - 113, line 129 - 134 & line 159 - 164)
+- I decided to add a divder between each section to optimise readability and separate the sections. (line 42, 67, 94, 115, 136, 166, 174 & 182)
+- format() method which converts the double hpMonthly, double pcpMonthly, double fuelWeekly and double costMonthly into Strings and formats it to 2 decimal places. (line 58, 85, 106 & 127)
+  
 Sources:
 ====================
 1) https://www.geeksforgeeks.org/java/loops-in-java/
