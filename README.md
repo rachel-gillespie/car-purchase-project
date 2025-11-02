@@ -24,7 +24,11 @@ Instructions:
 Known bugs/problems:
 ====================
 
-
+Extra Functionality:
+====================
+Return to menu method - allows user the option to either return to the menu or exit the program after each calculation.
+Divider between each section for readability and better UI.
+Added String.format("%.2f", ) to format to 2 decimal places.
 
 Sources:
 ====================
