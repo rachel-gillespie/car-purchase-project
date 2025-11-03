@@ -79,8 +79,8 @@ public class CarPurchaseHelper { // contains logic, tasks and reusable functiona
             return "Toyota Corolla Hybrid"; // if the above statement is true, return this string.
         } else if (carRequirement.equalsIgnoreCase("adventure")) { // checking if the string inputted is equal to adventure, ignoring letter case.
             return "Jeep Wrangler Rubicon"; // if the above statement is true, return this string.
-        } else { // if the above statements are false
-            return "You did not input a valid requirement!"; // if the above statements are false, return this string.
+        } else { // if the above statements are false,
+            return "You did not input a valid requirement!"; // return this string.
         }
     }
 
