@@ -1,6 +1,3 @@
-Name : Rachel Gillespie
-Student Number: 20118715
-
 Brief description of piece:
 ===================================================
 Car Helper Program to give users useful information and advice when choosing their next car. 
