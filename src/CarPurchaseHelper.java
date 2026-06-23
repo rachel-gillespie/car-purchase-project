@@ -1,4 +1,4 @@
-// Rachel Gillespie, 20118715, Car Helper Program to give users useful information and advice when choosing their next car.
+// Car Helper Program to give users useful information and advice when choosing their next car.
 
 public class CarPurchaseHelper { // contains logic, tasks and reusable functionality.
 
